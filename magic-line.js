@@ -8,7 +8,7 @@ $(function () {
     });
 });
 
-$(document).on('ready', function() {
+document.ready(function() {
 
     var $el, leftPos,tabSelected,
             $tabsNav = $("#main");
@@ -21,7 +21,6 @@ $(document).on('ready', function() {
             tabSelected = $('#main li:first-child');
             tabSelected.addClass('selected');
         }
-        console.log($('#main li#line').length);
         if($('#main li#line').length === 0) {
             $tabsNav.append("<li id='line'></li>");
         }
