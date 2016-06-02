@@ -1,3 +1,4 @@
+
 header
 	position: relative
 
@@ -8,35 +9,31 @@ header
 		top: 0
 
 		ul
-			margin: 50px
+			margin: 50px 0
+			padding: 0
 			position: absolute
-			right: 0
-			text-align: right
-			width: 600px
+			left: 0
+			width: 100%
 
 			li
-				display: inline-block
-				font-size: 1em
-				padding: 0 20px
+				display: block
+				margin: 0 50px 0 0
 
 				a
 					text-decoration: none
 				
 				&#line
-					bottom: -5px
-					height: 3px
+					bottom: 20px
 					left: 0
 					margin: 0
 					padding: 0
 					position: absolute
-					transition: all 300ms ease
+					transition: all 300ms ease-out
 				
-				&#line:before
-					background: red none repeat scroll 0 0
-					content: ""
-					height: 3px
-					left: 0
-					position: absolute
-					width: 100%
-				
-			
+					&:before
+						background-color: red
+						content: ""
+						height: 20px
+						left: 0
+						position: absolute
+						width: 20px

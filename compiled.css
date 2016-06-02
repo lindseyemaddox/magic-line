@@ -8,34 +8,32 @@ header nav {
   top: 0;
 }
 header nav ul {
-  margin: 50px;
+  margin: 50px 0;
+  padding: 0;
   position: absolute;
-  right: 0;
-  text-align: right;
-  width: 600px;
+  left: 0;
+  width: 100%;
 }
 header nav ul li {
-  display: inline-block;
-  font-size: 1em;
-  padding: 0 20px;
+  display: block;
+  margin: 0 50px 0 0;
 }
 header nav ul li a {
   text-decoration: none;
 }
 header nav ul li#line {
-  bottom: -5px;
-  height: 3px;
+  bottom: 20px;
   left: 0;
   margin: 0;
   padding: 0;
   position: absolute;
-  transition: all 300ms ease;
+  transition: all 300ms ease-out;
 }
 header nav ul li#line:before {
-  background: #f00 none repeat scroll 0 0;
+  background-color: #f00;
   content: "";
-  height: 3px;
+  height: 20px;
   left: 0;
   position: absolute;
-  width: 100%;
+  width: 20px;
 }
